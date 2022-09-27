@@ -397,3 +397,6 @@ protected/
 # replace "media/" with "media/images/"
 media/
 #media/images/
+
+# ------ Developer Added ------
+.env
