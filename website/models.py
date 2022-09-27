@@ -94,32 +94,36 @@ class WebPage(CoderedWebPage):
 # ------ E-Commerce Section: Snipcart ------
 
 class ProductsIndexPage(CoderedWebPage):
-    # Landing page for Products
+    """
+    Landing page for Products
+    """
     class Meta:
         verbose_name = "Products Landing Page"
 
     # Override to specify custom index ordering choice/default.
     index_query_pagemodel = 'website.ProductsPage'
 
-    # Only allow ProductPages beneath this page.
+    # Only allow ProductsPages beneath this page.
     subpage_types = ['website.ProductsPage']
 
-    template = 'website/pages/products_index_page.html'
+    template = 'website/pages/Products_index_page.html'
 
 class ProductsPage(CoderedWebPage):
-    # Custom page for individual products
+    """
+    Custom page for individual Products
+    """
 
     class Meta:
         verbose_name = "Products Page"
 
-    # Only allow this page to be created beneath a ProductsIndexPage.
+    # Only allow this page to be created beneath an ProductsIndexPage.
     parent_page_types = ['website.ProductsIndexPage']
 
-    template = "website/pages/products_page.html"
+    template = "website/pages/Products_page.html"
 
     # Products Page model fields
     description = RichTextField(
-        verbose_name="Products Description",
+        verbose_name="Product Description",
         null=True,
         blank=True,
         default=""
