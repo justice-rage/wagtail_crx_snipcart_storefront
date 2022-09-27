@@ -1,6 +1,13 @@
 """
 Create or customize your page models here.
 """
+# Developer Added
+from django.db import models
+from wagtail.admin.edit_handlers import FieldPanel
+from wagtail.core.fields import RichTextField
+from wagtail.images import get_image_model_string
+from wagtail.images.edit_handlers import ImageChooserPanel
+# Default
 from modelcluster.fields import ParentalKey
 from coderedcms.forms import CoderedFormField
 from coderedcms.models import (
@@ -11,12 +18,6 @@ from coderedcms.models import (
     CoderedWebPage,
 )
 
-# Developer Added
-from django.db import models
-from wagtail.admin.edit_handlers import FieldPanel
-from wagtail.core.fields import RichTextField
-from wagtail.images import get_image_model_string
-from wagtail.images.edit_handlers import ImageChooserPanel
 
 class ArticlePage(CoderedArticlePage):
     """
@@ -106,7 +107,8 @@ class ProductsIndexPage(CoderedWebPage):
     # Only allow ProductsPages beneath this page.
     subpage_types = ['website.ProductsPage']
 
-    template = 'website/pages/Products_index_page.html'
+    # template = 'website/pages/products_index_page.html'
+    template = 'coderedcms/pages/products_index_page.html'
 
 class ProductsPage(CoderedWebPage):
     """
@@ -119,7 +121,8 @@ class ProductsPage(CoderedWebPage):
     # Only allow this page to be created beneath an ProductsIndexPage.
     parent_page_types = ['website.ProductsIndexPage']
 
-    template = "website/pages/Products_page.html"
+    # template = "website/pages/products_page.html"
+    template = "coderedcms/pages/products_page.html"
 
     # Products Page model fields
     description = RichTextField(
