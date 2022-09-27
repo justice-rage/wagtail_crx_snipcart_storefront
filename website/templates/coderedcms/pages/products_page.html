@@ -16,9 +16,9 @@
         <div class="row m-4">
             <div class="col-lg-6">
                 {% if page.photo %}
-                {% image page.photo fill-300x300 as cupcake %}
+                {% image page.photo fill-300x300 as product %}
                 <div class="text-center">
-                    <img class="border-cherry" src="{{cupcake.url}}" alt="photo of {{page.title}}">
+                    <img class="border-cherry" src="{{product.url}}" alt="photo of {{page.title}}">
                 </div>
                 {% endif %}
             </div>
