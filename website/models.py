@@ -1,9 +1,9 @@
 """
 Create or customize your page models here.
 """
-# Developer Added
 from django.db import models
-from wagtail.admin.edit_handlers import FieldPanel
+from wagtail.contrib.settings.models import BaseSetting, register_setting
+from wagtail.admin.edit_handlers import FieldPanel, MultiFieldPanel, InlinePanel
 from wagtail.core.fields import RichTextField
 from wagtail.images import get_image_model_string
 from wagtail.images.edit_handlers import ImageChooserPanel
@@ -125,6 +125,13 @@ class ProductsPage(CoderedWebPage):
     template = "coderedcms/pages/products_page.html"
 
     # Products Page model fields
+    sku = models.CharField(
+        max_length=225
+        )
+    price = models.DecimalField(
+        decimal_places=2, 
+        max_digits=10,
+        )
     description = RichTextField(
         verbose_name="Product Description",
         null=True,
@@ -139,21 +146,20 @@ class ProductsPage(CoderedWebPage):
         related_name='+',
         verbose_name='Product Photo',
     )
-    DAYS_CHOICES = (
-        ("Weekends Only", "Weekends Only"),
-        ("Monday-Friday", "Monday-Friday"),
-        ("Tuesday/Thursday", "Tuesday/Thursday"),
-        ("Seasonal", "Seasonal"),
-    )
-    days_available = models.CharField(
-        choices = DAYS_CHOICES,
-        max_length=20,
-        default=""
-    )
 
     # Add custom fields to the body
     body_content_panels = CoderedWebPage.body_content_panels + [
-        FieldPanel("description"),
+        FieldPanel("sku"),
+        FieldPanel("price"),
         FieldPanel("photo"),
-        FieldPanel("days_available"),
+        FieldPanel("description"),
     ]
+
+# ------ Snipcart configuration settings ------
+
+@register_setting
+class SnipcartSettings(BaseSetting):
+    api_key = models.CharField(
+        max_length=255,
+        help_text='Your Snipcart public API key',
+    )
