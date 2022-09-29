@@ -26,9 +26,9 @@
                 <div class="py-lg-5">
                     <h2>{{page.title}}</h2>
                     <h5>${{page.price}}</h5>
-                    <lead class="text-cherry">{{page.days_available}}</lead>
-                    {% if page.description %}
-                    <p>{{page.description|richtext}}</p>
+                    <lead class="text-cherry">{{page.description|richtext}}</lead>
+                    {% if page.body %}
+                    <p>{{page.body}}</p>
                     {% endif %}
                 </div>
             </div>
