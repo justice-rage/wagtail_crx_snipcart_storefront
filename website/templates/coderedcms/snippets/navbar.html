@@ -1,0 +1,69 @@
+{% load wagtailcore_tags wagtailsettings_tags wagtailimages_tags coderedcms_tags i18n %}
+<!-- Brand Title -->
+<nav class="navbar {% get_navbar_css %}">
+  <div class="container{% if settings.coderedcms.LayoutSettings.navbar_content_fluid %}-fluid{% endif %}">
+    <a class="navbar-brand" href="/">
+      {% if settings.coderedcms.LayoutSettings.logo %}
+      {% image settings.coderedcms.LayoutSettings.logo original format-webp as logo %}
+      <img src="{{logo.url}}" alt="{{site.site_name}}">
+      {% else %}
+      {{site.site_name}}
+      {% endif %}
+    </a>
+
+    <!-- Navbar Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+      aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+      {% if settings.coderedcms.LayoutSettings.site_navbar %}
+      {% get_navbars as navbars %}
+      {% for navbar in navbars %}
+
+      <!-- Admin Snippet Generated Buttons -->
+      <ul class="navbar-nav {{navbar.custom_css_class}}" {% if navbar.custom_id %}id="{{navbar.custom_id}}" {% endif %}>
+        {% for item in navbar.menu_items %}
+        {% include_block item with liclass="nav-item" aclass="nav-link" ga_event_category="Navbar" %}
+        {% endfor %}
+      </ul>
+
+      <!-- Snipcart Shopping Cart -->
+      <a href="#" class="pe-auto">
+        <ul class="snipcart-checkout btn-primary nav-link navbar-nav {{navbar.custom_css_class}}" {% if navbar.custom_id %}id="{{navbar.custom_id}}" {% endif %}>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+          </svg>
+          {% for item in navbar.menu_items %}
+          {% endfor %}
+        </ul>
+      </a>
+
+      {% endfor %}
+      {% endif %}
+
+      <!-- Search Bar -->
+      {% if settings.coderedcms.LayoutSettings.navbar_search %}
+      <form class="d-flex ms-auto" role="search" action="{% url 'crx_search' %}" method="GET">
+        {% load django_bootstrap5 %}
+        {% get_searchform request as form %}
+        {% for field in form %}
+        {% bootstrap_field field show_label=False wrapper_class=None success_css_class=None server_side_validation=False %}
+        {% endfor %}
+        <button class="btn btn-outline-primary ms-2" type="submit">{% trans "Search" %}</button>
+      </form>
+      {% endif %}
+    </div>
+  </div>
+</nav>
+
+{# Navbar offset #}
+{% block navbar_offset %}
+{% if settings.coderedcms.LayoutSettings.navbar_fixed %}
+{% if settings.coderedcms.LayoutSettings.logo %}
+<div class="{{settings.coderedcms.LayoutSettings.navbar_format}}-fixed-img-offset {{settings.coderedcms.LayoutSettings.navbar_collapse_mode}}"></div>
+{% else %}
+<div class="{{settings.coderedcms.LayoutSettings.navbar_format}}-fixed-offset {{settings.coderedcms.LayoutSettings.navbar_collapse_mode}}"></div>
+{% endif %}
+{% endif %}
+{% endblock %}
