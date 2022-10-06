@@ -4,7 +4,7 @@
 {% block content_pre_body %}
     {% if self.cover_image %}
     {% image page.cover_image fill-2000x1000 as cover_image %}
-    <div class="jumbotron jumotron-fluid" style="height:400px;background-image:url({{cover_image.url}});background-repeat:no-repeat; background-size:cover; background-position:center center;">
+    <div class="jumbotron jumbotron-fluid" style="height:400px;background-image:url({{cover_image.url}});background-repeat:no-repeat; background-size:cover; background-position:center center;">
     </div>
     {% endif %}
 {% endblock %}
@@ -45,10 +45,11 @@
                             {% endif %}
                         {% endfor %}
                     </p>
+                    <!-- (page.description).replace('<p>', '').replace('</p>', '') -->
                     <button class="snipcart-add-item btn btn-primary"
                         data-item-id="{{ page.sku }}"
                         data-item-price="{{ page.price }}"
-                        data-item-description="{{ page.description}}"
+                        data-item-description="{{ page.description }}"
                         data-item-image="{{ temp_image.url }}"
                         data-item-name="{{ page.title }}">
                         Add to cart
