@@ -49,7 +49,7 @@
                     <button class="snipcart-add-item btn btn-primary"
                         data-item-id="{{ page.sku }}"
                         data-item-price="{{ page.price }}"
-                        data-item-description="{{ page.description }}"
+                        data-item-description="{{ page.description|striptags }}"
                         data-item-image="{{ temp_image.url }}"
                         data-item-name="{{ page.title }}">
                         Add to cart
