@@ -2,7 +2,7 @@
 
 This project integrates Wagtail CRX and Snipcart. Allowing individuals to get a robust e-commerce store off the ground quickly.
 
-![Cover image of a cute animated bird shopping in a store](README_media/bird-gone-shopping-background-1600x900.png)
+![Cover image of a cute animated bird shopping in a store](readme_media/bird-gone-shopping-background-1600x900.png)
 
 ## Technology Stack
 - Wagtail CRX
@@ -41,7 +41,7 @@ I decided to utilize the following three technologies because of the following r
 #### Snipcart
 > It's simple, fully customizeable, well documented, regularly maintained and updated, as well as includes a robust e-commerce dashboard.
 
---
+---
 
 ## Quick start
 
@@ -129,7 +129,7 @@ I decided to utilize the following three technologies because of the following r
 
 See the [Wagtail CRX docs](https://docs.coderedcorp.com/wagtail-crx/) and [Snipcart docs](https://docs.snipcart.com/v3/) for questions regarding customization and development.
 
---
+---
 
 #### Quick Start Disclaimer
 1. It is your responsibility to properly manage your Snipcart provided APIs.
@@ -151,7 +151,21 @@ See the [Wagtail CRX docs](https://docs.coderedcorp.com/wagtail-crx/) and [Snipc
 
 * For Snipcart customizations and utilization see [Snipcart](https://docs.snipcart.com/v3/)
 
---
+---
+
+## Project Screenshots
+![Wagtail CRX Snipcart Homepage](readme_media/wagtail-crx-snipcart-homepage.pmg)
+![Wagtail CRX Snipcart Products Landing Page](readme_media/wagtail-crx-snipcart-products-landing-page.png)
+![Wagtail CRX Snipcart Product Page](readme_media/wagtail-crx-snipcart-product-page.png)
+![Wagtail CRX Snipcart Modal Cart](readme_media/wagtail-crx-snipcart-modal-cart.png)
+![Wagtail CRX Snipcart Cart Summary](readme_media/wagtail-crx-snipcart-cart-summary.png)
+![Wagtail CRX Snipcart Cart Summary Detail](readme_media/wagtail-crx-snipcart-cart-summary-detail.png)
+![Wagtail CRX Snipcart billing](readme_media/wagtail-crx-snipcart-billing.png)
+![Wagtail CRX Snipcart Payment](readme_media/wagtail-crx-snipcart-payment.png)
+![Wagtail CRX Snipcart Thank You For Your Order](readme_media/wagtail-crx-snipcart-thank-you-for-your-order.png)
+![Wagtail CRX Snipcart About](readme_media/wagtail-crx-snipcart-about.png)
+![Wagtail CRX Snipcart Contact](readme_media/wagtail-crx-snipcart-contact.png)
+
 
 ## Future Plans
 I plan to create a Python Package based off this project to give back to the community that got me into programming. The goal is to make creating a Wagtail based e-commerce store as simple as spinning up a CRX project and pip installing the package.
