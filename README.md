@@ -128,8 +128,6 @@ I decided to utilize the following three technologies because of the following r
 29. Congratulations, you have successfully made a test transaction! 🎉 
    - You will be able to see your test transaction in your Snipcart dashboard. 
 
-See the [Wagtail CRX docs](https://docs.coderedcorp.com/wagtail-crx/) and [Snipcart docs](https://docs.snipcart.com/v3/) for questions regarding customization and development.
-
 ---
 
 #### Quick Start Disclaimer
