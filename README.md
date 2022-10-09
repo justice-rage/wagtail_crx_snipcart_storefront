@@ -133,7 +133,7 @@ I decided to utilize the following three technologies because of the following r
 #### Quick Start Disclaimer
 1. It is your responsibility to manage your Snipcart-provided APIs properly.
 2. It is your responsibility to read all pertinent documentation not covered here.
-3. Upon completing completing the quickstart you should have a fully functional non-live project capable of making test transactions.
+3. Upon completing the quickstart you should have a fully functional non-live project capable of making test transactions.
 4. It is your responsibility to ensure you have chosen and correctly configured a database that scales proportionally to your ambitions. 
 5. Before deploying your project to production, you are responsible for protecting sensitive data pertaining to your project, such as database environmental variables and other sensitive information.
 
