@@ -170,7 +170,7 @@ Due to the passionately long nature of the example customer's email the email te
 10. ![Wagtail CRX Snipcart About](README_media/wagtail-crx-snipcart-about.png)
 11. ![Wagtail CRX Snipcart Contact](README_media/wagtail-crx-snipcart-contact.png)
 
-###### Note
+##### Note
 I decided to not share screenshots of the admin as it should be straightforward with a combination of the provided official documentation as well as this README.
 
 
