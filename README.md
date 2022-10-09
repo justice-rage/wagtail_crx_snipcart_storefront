@@ -2,7 +2,7 @@
 
 This project integrates Wagtail CRX and Snipcart. Allowing individuals to get a robust e-commerce store off the ground quickly.
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/[justicepelteir]/[wagtail_crx_snipcart_storefront]/README_media/bird-gone-shopping-background-1600x900.png?raw=true)
 
 ## Technology Stack
 - Wagtail CRX
