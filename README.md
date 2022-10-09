@@ -2,6 +2,8 @@
 
 This project integrates Wagtail CRX and Snipcart. Allowing individuals to get a robust e-commerce store off the ground quickly.
 
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
 ## Technology Stack
 - Wagtail CRX
 - Bootstrap 5
@@ -173,5 +175,4 @@ Files in `wagtail_crx_snipcart_storefront/website/models.py `, `wagtail_crx_snip
 
 ---
 
-Made with ♥ using [Wagtail](https://wagtail.io/) +
-[CodeRed Extensions](https://www.coderedcorp.com/cms/) + [Snipcart](https://snipcart.com/)
+Made with ♥ using [Wagtail CRX](https://www.coderedcorp.com/cms/) + [Snipcart](https://snipcart.com/)
