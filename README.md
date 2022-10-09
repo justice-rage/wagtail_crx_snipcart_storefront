@@ -154,17 +154,18 @@ See the [Wagtail CRX docs](https://docs.coderedcorp.com/wagtail-crx/) and [Snipc
 ---
 
 ## Project Screenshots
-![Wagtail CRX Snipcart Homepage](README_media/wagtail-crx-snipcart-homepage.png)
-![Wagtail CRX Snipcart Products Landing Page](README_media/wagtail-crx-snipcart-products-landing-page.png)
-![Wagtail CRX Snipcart Product Page](README_media/wagtail-crx-snipcart-product-page.png)
-![Wagtail CRX Snipcart Modal Cart](README_media/wagtail-crx-snipcart-modal-cart.png)
-![Wagtail CRX Snipcart Cart Summary](README_media/wagtail-crx-snipcart-cart-summary.png)
-![Wagtail CRX Snipcart Cart Summary Detail](README_media/wagtail-crx-snipcart-cart-summary-detail.png)
-![Wagtail CRX Snipcart billing](README_media/wagtail-crx-snipcart-billing.png)
-![Wagtail CRX Snipcart Payment](README_media/wagtail-crx-snipcart-payment.png)
-![Wagtail CRX Snipcart Thank You For Your Order](README_media/wagtail-crx-snipcart-thank-you-for-your-order.png)
-![Wagtail CRX Snipcart About](README_media/wagtail-crx-snipcart-about.png)
-![Wagtail CRX Snipcart Contact](README_media/wagtail-crx-snipcart-contact.png)
+1. ![Wagtail CRX Snipcart Homepage](README_media/wagtail-crx-snipcart-homepage.png)
+2. ![Wagtail CRX Snipcart Products Landing Page](README_media/wagtail-crx-snipcart-products-landing-page.png)
+3. ![Wagtail CRX Snipcart Product Page](README_media/wagtail-crx-snipcart-product-page.png)
+4. ![Wagtail CRX Snipcart Modal Cart](README_media/wagtail-crx-snipcart-modal-cart.png)
+5. ![Wagtail CRX Snipcart Cart Summary](README_media/wagtail-crx-snipcart-cart-summary.png)
+6. ![Wagtail CRX Snipcart Cart Summary Detail](README_media/wagtail-crx-snipcart-cart-summary-detail.png)
+7. ![Wagtail CRX Snipcart billing](README_media/wagtail-crx-snipcart-billing.png)
+8. ![Wagtail CRX Snipcart Payment](README_media/wagtail-crx-snipcart-payment.png)
+Due to the passionately long nature of the example customer's email the email text is running into the billing address text in screenshots seven and eight. Under normal email length circumstances provided by test users not hellbent on pressuring Tacobell to bring back the XXL Grilled Stuft Burrito this text conflict would not occur.
+9. ![Wagtail CRX Snipcart Thank You For Your Order](README_media/wagtail-crx-snipcart-thank-you-for-your-order.png)
+10. ![Wagtail CRX Snipcart About](README_media/wagtail-crx-snipcart-about.png)
+11. ![Wagtail CRX Snipcart Contact](README_media/wagtail-crx-snipcart-contact.png)
 
 
 ## Future Plans
