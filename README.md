@@ -56,28 +56,28 @@ I decided to utilize the following three technologies because of the following r
 
 ##### The Secret Spice
 
-4. Copy and paste the models from this repository at `wagtail_crx_snipcart_storefront/website/models.py` into your projects models.py file.
+4. Copy and paste the models from this repository at `wagtail_crx_snipcart_storefront/website/models.py` into your projects `models.py` file.
 
-5. Copy and paste the base.html file in `wagtail_crx_snipcart_storefront/website/templates/coderedcms/pages` of this repository into your projects base.py file.
+5. Copy and paste the `base.html` file in `wagtail_crx_snipcart_storefront/website/templates/coderedcms/pages` of this repository into your projects `base.py` file.
 
 6. Create a [Snipcart](https://snipcart.com/) account and get your Public Test API Key.
 
 7. Paste your Public Test API Key directly below the "Insert Public API Test Key on the line below." comment within base.html.
    - Once your e-commerce store is ready to go live, you will replace the Public API Test Key with the Public Live API Key provided by Snipcart.
 
-8. Create a products_page.html file in `project_name/website/templates/coderedcms/pages`
+8. Create a `products_page.html` file in `project_name/website/templates/coderedcms/pages`
 
-9. Copy and paste products_page.html from this repository located at `wagtail_crx_snipcart_storefront/website/templates/coderedcms/pages` into your projects product_page.html file.
+9. Copy and paste `products_page.html` from this repository located at `wagtail_crx_snipcart_storefront/website/templates/coderedcms/pages` into your `projects product_page.html` file.
 
-10. Create a products_index_page.html file in `project_name/website/templates/coderedcms/pages`
+10. Create a `products_index_page.html` file in `project_name/website/templates/coderedcms/pages`
 
-11. Copy and paste products_index_page.html from this repository located at `wagtail_crx_snipcart_storefront/website/templates/coderedcms/pages` into your projects product_index_page.html file.  
+11. Copy and paste `products_index_page.html` from this repository located at `wagtail_crx_snipcart_storefront/website/templates/coderedcms/pages` into your projects `product_index_page.html` file.  
 
-12. Create a snippets folder in `project_name/website/templates/coderedcms`
+12. Create a `snippets` folder in `project_name/website/templates/coderedcms`
 
-13. Create a navbar.html file in `project_name/website/templates/coderedcms/snippets`
+13. Create a `navbar.html` file in `project_name/website/templates/coderedcms/snippets`
 
-14. Copy and paste navbar.html from this repository located at `wagtail_crx_snipcart_storefront/website/templates/coderedcms/snippets` into your projects navbar.html file.
+14. Copy and paste `navbar.html` from this repository located at `wagtail_crx_snipcart_storefront/website/templates/coderedcms/snippets` into your projects `navbar.html` file.
 
 ##### Implement Secret Spice
 
@@ -97,27 +97,27 @@ I decided to utilize the following three technologies because of the following r
    - Snipcart is cannot communicate with your local machine. Thus local development is impossible without making your local development server available to Snipcart. Ngrok solves this pain point.
    - If utilizing Mac OS, I suggest installing ngrok via the Homebrew option.
 
-19. In a separate terminal run 'ngrok http <localhost number>'.
-   - Example: ngrok http 8080
+19. In a separate terminal run `ngrok http <localhost number>`.
+   - Example: `ngrok http 8080`
 
 20. If successful you will see a ngrok session status appear. Copy the forwarding url.
-   - Example: https://<string-of-random-numbers-and-letters>.ngrok.io
+   - Example: `https://<string-of-random-numbers-and-letters>.ngrok.io`
 
 21. Navigate to your Snipcart dashboard, open account options (click on the upper right-hand corner human icon), and click on "Domains & URLS."
 
 22. In the Domain field, paste the ngrok forwarding url. 
 
-23. In the protocol field, select 'https.'
+23. In the protocol field, select `https`
 
 24. Press the save button on the "Domains & URLS" page. 
 
 25. Paste your ngrok forwarding url into your search bar and hit enter. It should take you to your project in a tab with a ngrok tunnel capable of making transactions with Snipcart.
    - If the url activates a "Deceptive site ahead" page from Google Chrome, click on details and press "visit this unsafe site."
 
-26. In a separate tab, paste your local host url that is running the project - Example: http://localhost:8000
+26. In a separate tab, paste your local host url that is running the project - Example: `http://localhost:8000`
    - IMPORTANT NOTE: You must have two separate tabs open and use them in unison—one for transactions and the other for admin dashboard use.
-      - https://<string-of-random-numbers-and-letters>.ngrok.io --> Can make Snipcart transactions. Can't access the admin dashboard.
-      - http://localhost:8000 --> Can't make Snipcart transactions. Can access the admin dashboard.
+      - `https://<string-of-random-numbers-and-letters>.ngrok.io` --> Can make Snipcart transactions. Can't access the admin dashboard.
+      - `http://localhost:8000` --> Can't make Snipcart transactions. Can access the admin dashboard.
 
 ##### The Final Stretch
 
