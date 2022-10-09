@@ -200,6 +200,8 @@ Files in `wagtail_crx_snipcart_storefront/website/models.py `, `wagtail_crx_snip
   https://creativecommons.org/licenses/by/3.0/
 - Have been modified from the original sources.
 
+All example images such as home page cover photo and products were created by me utilizing [Midjourney](https://www.midjourney.com/home/). [Commercial terms](https://midjourney.gitbook.io/docs/billing#commercial-terms) that apply to me regarding Midjourney also apply to you if you utilize these images for any purpose other than viewing this README.
+
 ---
 
 Made with ♥ using [Wagtail CRX](https://www.coderedcorp.com/cms/) + [Snipcart](https://snipcart.com/)
