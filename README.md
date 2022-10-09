@@ -111,7 +111,8 @@ I decided to utilize the following three technologies because of the following r
 
 24. Press the save button on the "Domains & URLS" page. 
 
-25. Paste your ngrok forwarding url into your search bar and hit enter. It should take you to your project in a tab with an ngrok tunnel capable of making transactions with Snipcart. 
+25. Paste your ngrok forwarding url into your search bar and hit enter. It should take you to your project in a tab with an ngrok tunnel capable of making transactions with Snipcart.
+   - If the url activates a "Deceptive site ahead" page from Google Chrome click on details, and then press "visit this unsafe site".
 
 26. In a separate tab, paste your local host url that is running the project - Example: http://localhost:8000
     - IMPORTANT NOTE: You must have two separate tabs open, and use them in unison. One for transactions and the other for admin dashboard use.
