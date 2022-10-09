@@ -172,11 +172,14 @@ Due to the passionately long nature of the example customer's email, the email t
 ##### Note
 I decided not to share screenshots of the admin as it should be straightforward with a combination of the official documentation and this README.
 
-## Bugs/Room for Improvement
-1. Add tests for newly developed features.
-2. API key must be inserted into base.html rather than admin.
+## Bugs
+1. API key must be inserted into base.html rather than admin.
    - Goal: Get Snipcart Settings within admin operational.
-3. Make feature that allows end user to elect to have the snipcart shopping cart panels reflect websites styling.
+
+## Room for Improvement
+1. Add tests for newly developed features.
+   - Goal: Implement TDD for future development.
+2. Make feature that allows end user to elect to have the snipcart shopping cart panels reflect websites styling.
 
 ## Recommended Hosting Solution
 [CodeRed Cloud](https://www.codered.cloud/)
