@@ -154,7 +154,7 @@ See the [Wagtail CRX docs](https://docs.coderedcorp.com/wagtail-crx/) and [Snipc
 ---
 
 ## Project Screenshots
-![Wagtail CRX Snipcart Homepage](README_media/wagtail-crx-snipcart-homepage.pmg)
+![Wagtail CRX Snipcart Homepage](README_media/wagtail-crx-snipcart-homepage.png)
 ![Wagtail CRX Snipcart Products Landing Page](README_media/wagtail-crx-snipcart-products-landing-page.png)
 ![Wagtail CRX Snipcart Product Page](README_media/wagtail-crx-snipcart-product-page.png)
 ![Wagtail CRX Snipcart Modal Cart](README_media/wagtail-crx-snipcart-modal-cart.png)
