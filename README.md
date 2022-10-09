@@ -174,4 +174,4 @@ Files in `wagtail_crx_snipcart_storefront/website/models.py `, `wagtail_crx_snip
 ---
 
 Made with ♥ using [Wagtail](https://wagtail.io/) +
-[CodeRed Extensions](https://www.coderedcorp.com/cms/)
+[CodeRed Extensions](https://www.coderedcorp.com/cms/) + [Snipcart](https://snipcart.com/)
