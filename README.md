@@ -1,6 +1,6 @@
 # Wagtail CRX Snipcart Storefront
 
-This project integrates Wagtail CRX and Snipcart. Allowing individuals to get a robust e-commerce store off the ground quickly.
+This project integrates [Wagtail CRX](https://docs.coderedcorp.com/wagtail-crx/) and [Snipcart](https://snipcart.com/). Allowing individuals to get a robust e-commerce store off the ground quickly.
 
 ![Cover image of a cute animated bird shopping in a store](README_media/bird-gone-shopping-background-1600x900.png)
 
@@ -60,10 +60,10 @@ I decided to utilize the following three technologies because of the following r
 
 5. Copy and paste the `base.html` file in `wagtail_crx_snipcart_storefront/website/templates/coderedcms/pages` of this repository into your projects `base.py` file.
 
-6. Create a [Snipcart](https://snipcart.com/) account and get your Public Test API Key.
+6. Create a [Snipcart](https://snipcart.com/) account and get your **Public Test API Key**.
 
-7. Paste your Public Test API Key directly below the "Insert Public API Test Key on the line below." comment within base.html.
-   - Once your e-commerce store is ready to go live, you will replace the Public API Test Key with the Public Live API Key provided by Snipcart.
+7. Paste your **Public Test API Key** directly below the *Insert Public API Test Key on the line below* comment within `base.html`.
+   - Once your e-commerce store is ready to go live, you will replace the **Public API Test Key** with the **Public Live API Key** provided by Snipcart.
 
 8. Create a `products_page.html` file in `project_name/website/templates/coderedcms/pages`
 
@@ -92,38 +92,38 @@ I decided to utilize the following three technologies because of the following r
 
 ##### The Miracle that is ngrok
 
-18. Install [ngrok](https://ngrok.com/), and add ngrok authtoken.
+18. Install [ngrok](https://ngrok.com/), and add *ngrok provided* authtoken.
    - [Official Snipcart ngrok Documentation](https://snipcart.com/blog/develop-a-snipcart-powered-website-locally-using-ngrok)
-   - Snipcart is cannot communicate with your local machine. Thus local development is impossible without making your local development server available to Snipcart. Ngrok solves this pain point.
+   - Snipcart cannot communicate with your local machine. Thus local development is impossible without making your local development server available to Snipcart. Ngrok solves this pain point.
    - If utilizing Mac OS, I suggest installing ngrok via the Homebrew option.
 
 19. In a separate terminal run `ngrok http <localhost number>`.
    - Example: `ngrok http 8080`
 
-20. If successful you will see a ngrok session status appear. Copy the forwarding url.
+20. If successful you will see a ngrok session status appear. Copy the *forwarding url*.
    - Example: `https://<string-of-random-numbers-and-letters>.ngrok.io`
 
-21. Navigate to your Snipcart dashboard, open account options (click on the upper right-hand corner human icon), and click on "Domains & URLS."
+21. Navigate to your Snipcart dashboard, open account options (click on the upper right-hand corner human icon), and click on *Domains & URLS*.
 
 22. In the Domain field, paste the ngrok forwarding url. 
 
 23. In the protocol field, select `https`
 
-24. Press the save button on the "Domains & URLS" page. 
+24. Press the save button on the *Domains & URLS* page. 
 
 25. Paste your ngrok forwarding url into your search bar and hit enter. It should take you to your project in a tab with a ngrok tunnel capable of making transactions with Snipcart.
-   - If the url activates a "Deceptive site ahead" page from Google Chrome, click on details and press "visit this unsafe site."
+   - If the url activates a *Deceptive site ahead* page from Google Chrome, click on *details* and press *visit this unsafe site.*
 
 26. In a separate tab, paste your local host url that is running the project - Example: `http://localhost:8000`
-   - IMPORTANT NOTE: You must have two separate tabs open and use them in unison—one for transactions and the other for admin dashboard use.
+   - IMPORTANT NOTE: You must have two separate tabs open and use them in unison.
       - `https://<string-of-random-numbers-and-letters>.ngrok.io` --> Can make Snipcart transactions. Can't access the admin dashboard.
       - `http://localhost:8000` --> Can't make Snipcart transactions. Can access the admin dashboard.
 
 ##### The Final Stretch
 
-27. In the admin capable tab, create a test product via signing into the admin and creating a Products Landing Page. After creation, navigate to your newly created Products Landing Page in the admin and click create child page. Fill out all required product information, and press publish when done.
+27. In the **admin capable tab**, create a test product via signing into the admin and creating a *Products Landing Page*. After creation, navigate to your newly created *Products Landing Page* in the admin and click create *child page*. Fill out all required product information, and press *publish* when done.
 
-28. In the transaction capable tab, add the product to your cart and attempt to check out.
+28. In the **transaction capable tab**, add the product to your cart and attempt to check out.
 
 29. Congratulations, you have successfully made a test transaction! 🎉 
    - You will be able to see your test transaction in your Snipcart dashboard. 
