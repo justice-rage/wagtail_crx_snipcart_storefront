@@ -177,6 +177,9 @@ I decided to not share screenshots of the admin as it should be straightforward 
 1. API key must be inserted into base.html rather than admin.
    - Goal: Get Snipcart Settings within admin operational.
 
+## Recommended Hosting Solution
+[CodeRed Cloud](https://www.codered.cloud/)
+
 ## Future Plans
 I plan to create a Python Package based off this project to give back to the community that got me into programming. The goal is to make creating a Wagtail based e-commerce store as simple as spinning up a CRX project and pip installing the package.
 
