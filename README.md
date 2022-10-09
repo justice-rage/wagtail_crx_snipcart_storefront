@@ -63,13 +63,13 @@ I decided to utilize the following three technologies because of the following r
 6. Create a [Snipcart](https://snipcart.com/) account and get your Public Test API Key.
 
 7. Paste your Public Test API Key directly below the "Insert Public API Test Key on the line below." comment within base.html.
-    - Once your e-commerce store is ready to go live you will replace the Public API Test Key with the Public Live API Key provided by Snipcart.
+   - Once your e-commerce store is ready to go live you will replace the Public API Test Key with the Public Live API Key provided by Snipcart.
 
 8. Create a products_page.html file in `project_name/website/templates/coderedcms/pages`
 
 9. Copy and paste products_page.html from this repository located at `wagtail_crx_snipcart_storefront/website/templates/coderedcms/pages` into your projects product_page.html file.
 
-10.  Create a products_index_page.html file in `project_name/website/templates/coderedcms/pages`
+10. Create a products_index_page.html file in `project_name/website/templates/coderedcms/pages`
 
 11. Copy and paste products_index_page.html from this repository located at `wagtail_crx_snipcart_storefront/website/templates/coderedcms/pages` into your projects product_index_page.html file.  
 
@@ -82,26 +82,26 @@ I decided to utilize the following three technologies because of the following r
 ##### Implement Secret Spice
 
 15. Run `python manage.py migrate` to create the core models.
-    - Wagtail CRX by default utilizes SQLite. Set up your preffered database solution now to save yourself the headache of a database migration.
-        - If you choose PostgreSQL feel free to leverage [my tutorial](https://www.justicedouglas.com/blog/creating-wagtail-crx-project-with-postgresql/).
+   - Wagtail CRX by default utilizes SQLite. Set up your preffered database solution now to save yourself the headache of a database migration.
+      - If you choose PostgreSQL feel free to leverage [my tutorial](https://www.justicedouglas.com/blog/creating-wagtail-crx-project-with-postgresql/).
 
 16. Run `python manage.py createsuperuser` to create the initial admin user.
 
 17. Run `python manage.py runserver` to launch the development server, and go to `http://localhost:8000` in your browser, or `http://localhost:8000/admin/` to log in with your admin account.
-    - At this point you can do everything but perform Snipcart test transactions which are required to populate your product data into your Snipcart accounts dashboard.
+   - At this point you can do everything but perform Snipcart test transactions which are required to populate your product data into your Snipcart accounts dashboard.
 
 ##### The Miracle that is ngrok
 
 18. Install [ngrok](https://ngrok.com/), and add ngrok authtoken.
-    - [Official Snipcart ngrok Documentation](https://snipcart.com/blog/develop-a-snipcart-powered-website-locally-using-ngrok)
-    - Snipcart is unable to communicate to your local machine, thus local development is impossible without making your local development server available to Snipcart. Ngrok solves this pain point.
-    - If utilizing Mac OS I suggest installing ngrok via the Homebrew option.
+   - [Official Snipcart ngrok Documentation](https://snipcart.com/blog/develop-a-snipcart-powered-website-locally-using-ngrok)
+   - Snipcart is unable to communicate to your local machine, thus local development is impossible without making your local development server available to Snipcart. Ngrok solves this pain point.
+   - If utilizing Mac OS I suggest installing ngrok via the Homebrew option.
 
 19. In a separate terminal run 'ngrok http <localhost number>'.
-    - Example: ngrok http 8080
+   - Example: ngrok http 8080
 
 20. If succesful you will see an ngrok session status appear. Copy the forwarding url.
-    - Example: https://<string-of-random-numbers-and-letters>.ngrok.io
+   - Example: https://<string-of-random-numbers-and-letters>.ngrok.io
 
 21. Navigate to your Snipcart dashboard, open account options (click on the upper right hand corner human icon), click on "Domains & URLS".
 
@@ -115,9 +115,9 @@ I decided to utilize the following three technologies because of the following r
    - If the url activates a "Deceptive site ahead" page from Google Chrome click on details, and then press "visit this unsafe site".
 
 26. In a separate tab, paste your local host url that is running the project - Example: http://localhost:8000
-    - IMPORTANT NOTE: You must have two separate tabs open, and use them in unison. One for transactions and the other for admin dashboard use.
-        - https://<string-of-random-numbers-and-letters>.ngrok.io --> Can make Snipcart transactions. Can't access admin dashboard.
-        - http://localhost:8000 --> Can't make Snipcart transactions. Can access admin dashboard.
+   - IMPORTANT NOTE: You must have two separate tabs open, and use them in unison. One for transactions and the other for admin dashboard use.
+      - https://<string-of-random-numbers-and-letters>.ngrok.io --> Can make Snipcart transactions. Can't access admin dashboard.
+      - http://localhost:8000 --> Can't make Snipcart transactions. Can access admin dashboard.
 
 ##### The Final Stretch
 
@@ -126,7 +126,7 @@ I decided to utilize the following three technologies because of the following r
 28. In the transaction capable tab add the product to your cart and attempt check out.
 
 29. Congratulations, you have succesfully made a test transaction! 🎉 
-    - You will be able to see your test transaction in your Snipcart dashbaord. 
+   - You will be able to see your test transaction in your Snipcart dashbaord. 
 
 See the [Wagtail CRX docs](https://docs.coderedcorp.com/wagtail-crx/) and [Snipcart docs](https://docs.snipcart.com/v3/) for questions regarding customization and development.
 
