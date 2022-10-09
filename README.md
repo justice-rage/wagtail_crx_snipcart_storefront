@@ -162,7 +162,8 @@ See the [Wagtail CRX docs](https://docs.coderedcorp.com/wagtail-crx/) and [Snipc
 6. ![Wagtail CRX Snipcart Cart Summary Detail](README_media/wagtail-crx-snipcart-cart-summary-detail.png)
 7. ![Wagtail CRX Snipcart billing](README_media/wagtail-crx-snipcart-billing.png)
 8. ![Wagtail CRX Snipcart Payment](README_media/wagtail-crx-snipcart-payment.png)
-Due to the passionately long nature of the example customer's email the email text is running into the billing address text in screenshots seven and eight. Under normal email length circumstances provided by test users not hellbent on pressuring Tacobell to bring back the XXL Grilled Stuft Burrito this text conflict would not occur.
+###### Disclaimer
+Due to the passionately long nature of the example customer's email the email text is running into the billing address text in screenshots seven and eight. Under normal email length circumstances provided by test users not hellbent on [pressuring Tacobell to bring back the XXL Grilled Stuft Burrito](https://www.change.org/p/taco-bell-bring-back-the-xxl-grilled-stuffed-burrito) this text conflict would not occur.
 9. ![Wagtail CRX Snipcart Thank You For Your Order](README_media/wagtail-crx-snipcart-thank-you-for-your-order.png)
 10. ![Wagtail CRX Snipcart About](README_media/wagtail-crx-snipcart-about.png)
 11. ![Wagtail CRX Snipcart Contact](README_media/wagtail-crx-snipcart-contact.png)
