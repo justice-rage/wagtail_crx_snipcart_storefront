@@ -146,9 +146,9 @@ I decided to utilize the following three technologies because of the following r
   [Wagtail](http://docs.wagtail.io/) and
   [Django](https://docs.djangoproject.com/).
 
-* For HTML template design see [Bootstrap](https://getbootstrap.com/).
-
 * For Snipcart customizations and utilization, see [Snipcart](https://docs.snipcart.com/v3/)
+
+* For HTML template design see [Bootstrap](https://getbootstrap.com/).
 
 ---
 
