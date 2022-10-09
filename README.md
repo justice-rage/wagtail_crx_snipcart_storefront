@@ -2,7 +2,7 @@
 
 This project integrates Wagtail CRX and Snipcart. Allowing individuals to get a robust e-commerce store off the ground quickly.
 
-![alt text](mysite/README_media/bird-gone-shopping-background-1600x900.png)
+![Cover image of a cute animated bird shopping in a store](README_media/bird-gone-shopping-background-1600x900.png)
 
 ## Technology Stack
 - Wagtail CRX
