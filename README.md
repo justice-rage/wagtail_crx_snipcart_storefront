@@ -2,7 +2,7 @@
 
 This project integrates Wagtail CRX and Snipcart. Allowing individuals to get a robust e-commerce store off the ground quickly.
 
-![Cover image of a cute animated bird shopping in a store](readme_media/bird-gone-shopping-background-1600x900.png)
+![Cover image of a cute animated bird shopping in a store](README_media/bird-gone-shopping-background-1600x900.png)
 
 ## Technology Stack
 - Wagtail CRX
@@ -154,17 +154,17 @@ See the [Wagtail CRX docs](https://docs.coderedcorp.com/wagtail-crx/) and [Snipc
 ---
 
 ## Project Screenshots
-![Wagtail CRX Snipcart Homepage](readme_media/wagtail-crx-snipcart-homepage.pmg)
-![Wagtail CRX Snipcart Products Landing Page](readme_media/wagtail-crx-snipcart-products-landing-page.png)
-![Wagtail CRX Snipcart Product Page](readme_media/wagtail-crx-snipcart-product-page.png)
-![Wagtail CRX Snipcart Modal Cart](readme_media/wagtail-crx-snipcart-modal-cart.png)
-![Wagtail CRX Snipcart Cart Summary](readme_media/wagtail-crx-snipcart-cart-summary.png)
-![Wagtail CRX Snipcart Cart Summary Detail](readme_media/wagtail-crx-snipcart-cart-summary-detail.png)
-![Wagtail CRX Snipcart billing](readme_media/wagtail-crx-snipcart-billing.png)
-![Wagtail CRX Snipcart Payment](readme_media/wagtail-crx-snipcart-payment.png)
-![Wagtail CRX Snipcart Thank You For Your Order](readme_media/wagtail-crx-snipcart-thank-you-for-your-order.png)
-![Wagtail CRX Snipcart About](readme_media/wagtail-crx-snipcart-about.png)
-![Wagtail CRX Snipcart Contact](readme_media/wagtail-crx-snipcart-contact.png)
+![Wagtail CRX Snipcart Homepage](README_media/wagtail-crx-snipcart-homepage.pmg)
+![Wagtail CRX Snipcart Products Landing Page](README_media/wagtail-crx-snipcart-products-landing-page.png)
+![Wagtail CRX Snipcart Product Page](README_media/wagtail-crx-snipcart-product-page.png)
+![Wagtail CRX Snipcart Modal Cart](README_media/wagtail-crx-snipcart-modal-cart.png)
+![Wagtail CRX Snipcart Cart Summary](README_media/wagtail-crx-snipcart-cart-summary.png)
+![Wagtail CRX Snipcart Cart Summary Detail](README_media/wagtail-crx-snipcart-cart-summary-detail.png)
+![Wagtail CRX Snipcart billing](README_media/wagtail-crx-snipcart-billing.png)
+![Wagtail CRX Snipcart Payment](README_media/wagtail-crx-snipcart-payment.png)
+![Wagtail CRX Snipcart Thank You For Your Order](README_media/wagtail-crx-snipcart-thank-you-for-your-order.png)
+![Wagtail CRX Snipcart About](README_media/wagtail-crx-snipcart-about.png)
+![Wagtail CRX Snipcart Contact](README_media/wagtail-crx-snipcart-contact.png)
 
 
 ## Future Plans
