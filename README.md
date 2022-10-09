@@ -157,6 +157,7 @@ See the [Wagtail CRX docs](https://docs.coderedcorp.com/wagtail-crx/) and [Snipc
 ##### Disclaimer
 Due to the passionately long nature of the example customer's email the email text is running into the billing address text in screenshots seven and eight. Under normal email length circumstances provided by test users not hellbent on [pressuring Tacobell to bring back the XXL Grilled Stuft Burrito](https://www.change.org/p/taco-bell-bring-back-the-xxl-grilled-stuffed-burrito) this text conflict would not occur.
 1. ![Wagtail CRX Snipcart Homepage](README_media/wagtail-crx-snipcart-homepage.png)
+
 2. ![Wagtail CRX Snipcart Products Landing Page](README_media/wagtail-crx-snipcart-products-landing-page.png)
 3. ![Wagtail CRX Snipcart Product Page](README_media/wagtail-crx-snipcart-product-page.png)
 4. ![Wagtail CRX Snipcart Modal Cart](README_media/wagtail-crx-snipcart-modal-cart.png)
