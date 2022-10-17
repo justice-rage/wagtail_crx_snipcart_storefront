@@ -17,7 +17,8 @@ from coderedcms.models import (
     CoderedFormPage,
     CoderedWebPage,
 )
-
+# Wagtail Settings
+from django.utils.translation import gettext_lazy as _
 
 class ArticlePage(CoderedArticlePage):
     """
@@ -92,7 +93,7 @@ class WebPage(CoderedWebPage):
 
     template = "coderedcms/pages/web_page.html"
 
-# ------ E-Commerce Section: Snipcart ------
+# ------ E-Commerce Section: Snipcart Pages ------
 
 class ProductsIndexPage(CoderedWebPage):
     """
@@ -155,11 +156,20 @@ class ProductsPage(CoderedWebPage):
         FieldPanel("description"),
     ]
 
-# ------ Snipcart configuration settings ------
+# ------ Snipcart Configuration Settings ------
 
 @register_setting
 class SnipcartSettings(BaseSetting):
-    api_key = models.CharField(
+    """
+    Snipcart API Key
+    """
+
+    class Meta:
+        verbose_name = _("Snipcart")
+
+    snipcart_api_key = models.CharField(
+        blank=True,
         max_length=255,
-        help_text='Your Snipcart public API key',
+        verbose_name=_("Snipcart API Key"),
+        help_text=_("The API Key used for Snipcart."),
     )
