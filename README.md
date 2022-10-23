@@ -60,35 +60,34 @@ I decided to utilize the following three technologies because of the following r
 
 5. Copy and paste the `base.html` file in `wagtail_crx_snipcart_storefront/website/templates/coderedcms/pages` of this repository into your projects `base.py` file.
 
-6. Create a [Snipcart](https://snipcart.com/) account and get your **Public Test API Key**.
+6. Create a `products_page.html` file in `project_name/website/templates/coderedcms/pages`
 
-7. Paste your **Public Test API Key** directly below the *Insert Public API Test Key on the line below* comment within `base.html`.
-   - Once your e-commerce store is ready to go live, you will replace the **Public API Test Key** with the **Public Live API Key** provided by Snipcart.
+7. Copy and paste `products_page.html` from this repository located at `wagtail_crx_snipcart_storefront/website/templates/coderedcms/pages` into your `projects product_page.html` file.
 
-8. Create a `products_page.html` file in `project_name/website/templates/coderedcms/pages`
+8. Create a `products_index_page.html` file in `project_name/website/templates/coderedcms/pages`
 
-9. Copy and paste `products_page.html` from this repository located at `wagtail_crx_snipcart_storefront/website/templates/coderedcms/pages` into your `projects product_page.html` file.
+9. Copy and paste `products_index_page.html` from this repository located at `wagtail_crx_snipcart_storefront/website/templates/coderedcms/pages` into your projects `product_index_page.html` file.  
 
-10. Create a `products_index_page.html` file in `project_name/website/templates/coderedcms/pages`
+10. Create a `snippets` folder in `project_name/website/templates/coderedcms`
 
-11. Copy and paste `products_index_page.html` from this repository located at `wagtail_crx_snipcart_storefront/website/templates/coderedcms/pages` into your projects `product_index_page.html` file.  
+11. Create a `navbar.html` file in `project_name/website/templates/coderedcms/snippets`
 
-12. Create a `snippets` folder in `project_name/website/templates/coderedcms`
-
-13. Create a `navbar.html` file in `project_name/website/templates/coderedcms/snippets`
-
-14. Copy and paste `navbar.html` from this repository located at `wagtail_crx_snipcart_storefront/website/templates/coderedcms/snippets` into your projects `navbar.html` file.
+12. Copy and paste `navbar.html` from this repository located at `wagtail_crx_snipcart_storefront/website/templates/coderedcms/snippets` into your projects `navbar.html` file.
 
 ##### Implement Secret Spice
 
-15. Run `python manage.py migrate` to create the core models.
+13. Run `python manage.py migrate` to create the core models.
    - Wagtail CRX, by default, utilizes SQLite. Set up your preferred database solution to save yourself the headache of a database migration.
       - If you choose PostgreSQL, feel free to leverage [my tutorial](https://www.justicedouglas.com/blog/creating-wagtail-crx-project-with-postgresql/).
 
-16. Run `python manage.py createsuperuser` to create the initial admin user.
+14. Run `python manage.py createsuperuser` to create the initial admin user.
 
-17. Run `python manage.py runserver` to launch the development server, and go to `http://localhost:8000` in your browser, or `http://localhost:8000/admin/` to log in with your admin account.
-   - At this point, you can do everything but perform Snipcart test transactions, which are required to populate your product data into your Snipcart accounts dashboard.
+15. Run `python manage.py runserver` to launch the development server, and go to `http://localhost:8000` in your browser, or `http://localhost:8000/admin/` to log in with your admin account.
+
+16. Create a [Snipcart](https://snipcart.com/) account and get your **Public Test API Key**.
+
+17. Navigate to `http://localhost:8000/admin/settings/website/snipcartsettings` and paste your **Public Test API Key** into the *Snipcart API Key* input field.
+   - Once your e-commerce store is ready to go live and sell to customers, you will replace the **Public API Test Key** with the **Public Live API Key** provided by Snipcart. 
 
 ##### The Miracle that is ngrok
 
@@ -110,6 +109,7 @@ I decided to utilize the following three technologies because of the following r
 23. In the protocol field, select `https`
 
 24. Press the save button on the *Domains & URLS* page. 
+    - IMPORTANT NOTE: Everytime you need to create a new ngrok tunnel you must update this. Otherwise, you will experience a checkout error.
 
 25. Paste your ngrok forwarding url into your search bar and hit enter. It should take you to your project in a tab with a ngrok tunnel capable of making transactions with Snipcart.
    - If the url activates a *Deceptive site ahead* page from Google Chrome, click on *details* and press *visit this unsafe site.*
@@ -124,9 +124,10 @@ I decided to utilize the following three technologies because of the following r
 27. In the **admin capable tab**, create a test product via signing into the admin and creating a *Products Landing Page*. After creation, navigate to your newly created *Products Landing Page* in the admin and click create *child page*. Fill out all required product information, and press *publish* when done.
 
 28. In the **transaction capable tab**, add the product to your cart and attempt to check out.
+    - You should now be able to perform transactions (only test transactions are covered in this guide), which are required to [populate your product data into your Snipcart accounts dashboard](https://docs.snipcart.com/v3/dashboard/store-management#5-products).
 
 29. Congratulations, you have successfully made a test transaction! 🎉 
-   - You will be able to see your test transaction in your Snipcart dashboard. 
+   - You will be able to see your transaction in your Snipcart dashboard. 
 
 ---
 
@@ -173,8 +174,7 @@ Due to the passionately long nature of the example customer's email, the email t
 I decided not to share screenshots of the admin as it should be straightforward with a combination of the official documentation and this README.
 
 ## Bugs
-1. API key must be inserted into base.html rather than admin.
-   - Goal: Get Snipcart Settings within admin operational.
+None currently known.
 
 ## Room for Improvement
 1. Add tests for newly developed features.
