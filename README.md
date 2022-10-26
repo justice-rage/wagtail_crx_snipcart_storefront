@@ -23,6 +23,9 @@ This project integrates [Wagtail CRX](https://docs.coderedcorp.com/wagtail-crx/)
 | Wagtail CRX         | 1.0 |
 | Snipcart                  | 3.0 |
 
+## Test Coverage
+Note: TDD Pytest update in progress. Currently learning Pytest.
+Current: 0%
 
 ## Why did I decide to integrate Wagtail CRX and Snipcart?
 I decided to utilize the following three technologies because of the following reasons in no specific order:
