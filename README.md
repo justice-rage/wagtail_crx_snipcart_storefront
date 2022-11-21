@@ -1,6 +1,6 @@
 # Wagtail CRX Snipcart Storefront
 
-This project integrates [Wagtail CRX](https://docs.coderedcorp.com/wagtail-crx/) and [Snipcart](https://snipcart.com/). Allowing individuals to get a robust e-commerce store off the ground quickly.
+This project integrates [Wagtail CRX](https://docs.coderedcorp.com/wagtail-crx/) and [Snipcart](https://snipcart.com/). Allowing individuals to get a robust e-commerce store off the ground quickly. Navigate to the official wagtail CRX Snipcart Template (here)[https://github.com/justicepelteir/wagtail-crx-snipcart-template] to get started quickly.
 
 ![Cover image of a cute animated bird shopping in a store](README_media/bird-gone-shopping-background-1600x900.png)
 
@@ -22,10 +22,6 @@ This project integrates [Wagtail CRX](https://docs.coderedcorp.com/wagtail-crx/)
 |------------------------|----------------------|
 | Wagtail CRX         | 1.0 |
 | Snipcart                  | 3.0 |
-
-## Test Coverage
-Note: TDD Pytest update in progress. Currently learning Pytest.
-- Current: 0%
 
 ## Why did I decide to integrate Wagtail CRX and Snipcart?
 I decided to utilize the following three technologies because of the following reasons in no specific order:
